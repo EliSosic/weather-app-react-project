@@ -3,10 +3,16 @@ body {
     background-color: black;
     color: white;
     text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 a {
     color: white;
+}
+
+img {
+    max-width: 400px;
 }
 
 .App h1 {
