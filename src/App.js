@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="container">
         <img src={logo} alt="logo"/>
-        <Weather />
+        <Weather defaultCity="Trieste"/>
         <hr/>
         <footer>
                 <div>This project was made by Elisa Sosic , you can find it on {""}
