@@ -8,7 +8,6 @@ export default function Weather () {
                 <input type="search" className="Input-box" placeholder="Enter a city"/>
                 <input type="search" className="Search-button"value="Search" />
             </form>
-            
             <div className="row">
                 <div className="col-6">
                     <h2> Trieste</h2>
@@ -25,12 +24,13 @@ export default function Weather () {
                     </div>
                 </div>
             </div>
+            <hr/>
+            <div>This project was made by Elisa Sosic , you can find it on {""}
+                <a href="https://github.com/EliSosic/weather-app-react-project.git">Github</a> {""}
+            and hosted on 
+            <a href="https://weather-app-react-project-es.netlify.app/"> Netlify</a>
 
-
-
-
-        
-        
+            </div>
         </div>
     )
 }

@@ -1,3 +1,16 @@
-.App h1 {
-    font-size: 70px;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
+
+a {
+    color: white;
+}
+
+.App h1 {
+    font-size: 50px;
+    margin-top: 20px;;
+}
+
