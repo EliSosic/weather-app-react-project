@@ -25,37 +25,3 @@
 .Weather img {
     width: 80px;
 }
-
-
-
-.Main-date {
- font-size: 20px;
-}
-
-
-
-.Main-description {
-    font-size: 20px;
-}
-
-
-.Main-temperature {
-    font-size: 70px;
-    padding: 20px 0;
-    position: relative;
-    top: 50px;
-}
-
-.Main-unit {
-    font-size: 25px;;
-    position: relative;
-    line-height: 1;
-    top: 0px;
-    
-}
-
-.Main-details {
-    font-size: 15px;
-    position: relative;
-    top: 50px;
-}

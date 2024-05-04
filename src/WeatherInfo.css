@@ -1,0 +1,32 @@
+
+.Main-date {
+    font-size: 20px;
+   }
+   
+
+   .Main-description {
+       font-size: 20px;
+   }
+   
+   
+   .Main-temperature {
+       font-size: 70px;
+       padding: 20px 0;
+       position: relative;
+       top: 10px;
+   }
+   
+   .Main-unit {
+       font-size: 25px;;
+       position: relative;
+       line-height: 1;
+       top: -20px;
+       
+   }
+   
+   .Main-details {
+       font-size: 15px;
+       position: relative;
+       top: 3px;
+   }
+   
