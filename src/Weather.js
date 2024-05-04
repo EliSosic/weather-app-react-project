@@ -1,5 +1,8 @@
 import React, {useState} from  "react";
 import axios from "axios";
+
+import FormattedDate from "./FormattedDate"
+
 import "./Weather.css";
 
 export default function Weather (props) {
@@ -8,12 +11,11 @@ export default function Weather (props) {
         console.log(response.data);
         setWeatherData ({
             ready: true,
-            city: response.data.city,
-            date: response.data.time,
-            icon: response.data.condition.icon_url,
-            description: response.data.condition.description,
-            temperature: response.data.temperature.current,
-            humidity: response.data.temperature.humidity,
+            city: response.data.name,
+            icon: response.data.weather[0].icon,
+            description: response.data.weather[0].description,
+            temperature: response.data.main.temp,
+            humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
         });
     }
@@ -30,7 +32,9 @@ export default function Weather (props) {
                 <div className="row">
                     <div className="col-6">
                         <h2 className="text-capitalize"> {weatherData.city}</h2>
-                        <div className="Main-date"> {weatherData.date}</div>
+                        <div className="Main-date"> 
+                        <FormattedDate date={weatherData.date}/>
+                        </div>
                         <img src={weatherData.icon} alt={weatherData.description} className="img-fluid"/>
                         <div className="Main-description text-capitalize"> {weatherData.description}</div>
                     </div>
@@ -50,8 +54,8 @@ export default function Weather (props) {
             </div>
         )
     } else {
-        const apiKey ="3c836392eab01t60930bboe42ecabfe4";
-        let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
+        const apiKey ="5f472b7acba333cd8a035ea85a0d4d4c";
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(handleResponse);
         return "Loading..."
     }   
