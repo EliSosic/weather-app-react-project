@@ -7,8 +7,9 @@ body {
     max-width: 600px;
 }
 
-a {
-    color: white;
+
+.App a {
+    color: rgb(13, 193, 4);
 }
 
 img {

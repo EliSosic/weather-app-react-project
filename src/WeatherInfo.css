@@ -1,11 +1,13 @@
-
 .Main-date {
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 20px;
    }
    
 
    .Main-description {
-       font-size: 20px;
+       font-size: 18px;
+       padding-top: 8px;
    }
    
    
@@ -13,20 +15,25 @@
        font-size: 70px;
        padding: 20px 0;
        position: relative;
-       top: 10px;
+       top: 30px;
+       color: rgb(13, 193, 4);
    }
    
    .Main-unit {
-       font-size: 25px;;
+       font-size: 20px;;
        position: relative;
        line-height: 1;
-       top: -20px;
-       
+       top: -5px;
+       color: rgb(13, 193, 4);
+   }
+
+   a .Main-unit {
+    color: rgb(13, 193, 4);
    }
    
    .Main-details {
-       font-size: 15px;
+       font-size: 18px;
        position: relative;
-       top: 3px;
+       top: 30px;
    }
    
