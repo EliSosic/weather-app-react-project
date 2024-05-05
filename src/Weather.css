@@ -22,6 +22,6 @@
     border-radius: 5px;
 }
 
-.Weather img {
-    width: 80px;
+.Weather canvas {
+    width: 60px;
 }
