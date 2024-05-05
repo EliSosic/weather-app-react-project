@@ -7,7 +7,7 @@ import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
     return (
-        <div clasName="WeatherInfo">
+        <div className="WeatherInfo">
              <div className="row">
                     <div className="col-6">
                         <h2 className="text-capitalize"> {props.data.city}</h2>

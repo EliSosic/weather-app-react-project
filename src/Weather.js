@@ -14,7 +14,7 @@ export default function Weather (props) {
             ready: true,
             city: response.data.name,
             date: new Date(response.data.dt * 1000),
-            icon: response.data.weather[0].icon,
+            icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             description: response.data.weather[0].description,
             temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
@@ -40,7 +40,7 @@ export default function Weather (props) {
     if (weatherData.ready) {
         return(
             <div className="Weather">
-                <form className="text-center" onSubmit= {handleSubmit}>
+                <form className="text-center" onSubmit={handleSubmit}>
                     <input type="search" className="Input-box" placeholder="Enter a city"
                     autoFocus="on"/>
                     
