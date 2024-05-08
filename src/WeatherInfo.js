@@ -17,7 +17,7 @@ export default function WeatherInfo(props) {
                         <FormattedDate date={props.data.date}/>
                         </div>
                         <div className="img-fluid float-left">
-                        <WeatherIcon code={props.data.icon} />
+                        <WeatherIcon code={props.data.icon} size={100} />
                         </div>
                         <div className="Main-description text-capitalize"> {props.data.description}</div>
                     </div>
