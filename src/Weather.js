@@ -20,6 +20,7 @@ export default function Weather (props) {
             temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
+            coord: response.data.coord
         });
     }
 
@@ -49,7 +50,7 @@ export default function Weather (props) {
                     <input type="submit" className="Search-button"value="Search" />
                 </form>
                 <WeatherInfo data= {weatherData}/>   
-                <WeatherForecast />
+                <WeatherForecast coord={weatherData.coord}/>
             </div>
         );
     } else {

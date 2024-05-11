@@ -16,7 +16,7 @@
        padding: 20px 0;
        position: relative;
        top: 30px;
-       color: rgb(13, 193, 4);
+       color: rgb(16, 176, 141);
    }
    
    .Main-unit {
@@ -24,11 +24,11 @@
        position: relative;
        line-height: 1;
        top: -5px;
-       color: rgb(13, 193, 4);
+       color: rgb(16, 176, 141);
    }
 
    a .Main-unit {
-    color: rgb(13, 193, 4);
+    color: rgb(16, 176, 141);
    }
    
    .Main-details {
